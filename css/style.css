@@ -7,6 +7,7 @@
 
 body {
     background-color: #F0F2F5;
+    position: relative;
 }
 
 .nav-bar {
@@ -130,7 +131,8 @@ body {
 }
 
 .marge {
-    margin-top: .3rem;
+    margin-top: .5rem;
+    overflow: -moz-hidden-unscrollable;
 }
 
 .element-1:hover {
@@ -168,13 +170,23 @@ body {
 }
 
 .stories {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.sto {
+    margin-left: .5rem;
+}
+
+.grid-2 {
+    margin-left: -2rem;
 }
 
 .story {
     background-size: cover;
-    border-radius: 8px;
+    border-radius: 10px;
     width: 7.4rem;
     height: 13rem;
     padding: 1rem;
@@ -183,7 +195,7 @@ body {
 .story:hover {
     filter: brightness(50%);
     cursor: pointer;
-    transition: .7s ease;
+    transition: .5s ease-in-out;
 }
 
 .story-1 {
@@ -226,11 +238,11 @@ body {
 
 .card-1 {
     width: 35rem;
-    height: 10rem;
+    height: 8.5rem;
     background-color: white;
-    margin: 5vh auto;
+    margin: 4vh auto;
     border-radius: 6px;
-    padding: .5rem;
+    padding: .8rem;
     box-shadow: 1px 2px 15px lightgray;
 }
 
@@ -238,4 +250,294 @@ body {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
+    border: 1px solid lightgray;
+}
+
+.it-in {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e8e8ee;
+    padding-bottom: 1rem;
+}
+
+.inp-2 {
+    width: 90%;
+    height: 2.6rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #F0F2F5;
+    padding-left: 1rem;
+    margin-left: .8rem;
+}
+
+.inp-2::placeholder {
+    font-size: 1.05rem;
+}
+
+.inp-2:hover {
+    background-color: #dddedf;
+    cursor: pointer;
+}
+
+.inp-2:focus {
+    outline: none;
+}
+
+.card-done {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+
+.donn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    padding: .3rem;
+}
+
+.donn:hover {
+    background-color: #e5e5ee;
+    border-radius: 4px;
+}
+
+.live {
+    margin-left: .4rem;
+    color: #94676B;
+    font-weight: 600;
+}
+
+.card-2 {
+    width: 35rem;
+    height: 7rem;
+    background-color: white;
+    margin: 3vh auto;
+    border-radius: 6px;
+    padding: .7rem;
+    box-shadow: 1px 2px 15px lightgray;
+}
+
+.card-nv {
+    display: flex;
+    align-items: center;
+}
+
+.flet {
+    display: flex;
+    /* align-items: center; */
+}
+
+.chai {
+    font-weight: 600;
+    margin-left: .3rem;
+}
+
+.frnds {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: #8C6164;
+    font-weight: 400;
+    margin-bottom: .2rem;
+    margin-left: 1rem;
+}
+
+.cre-room {
+    margin-left: 11rem;
+    text-decoration: none;
+}
+
+.card-main {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.card-main::-webkit-scrollbar {
+    display: none;
+}
+
+.imggg {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    margin-left: 1.8rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.card-main {
+    margin-right: 1rem;
+}
+
+.hi-cards {
+    width: 35rem;
+    height: 17rem;
+    background-color: white;
+    margin: 3vh auto;
+    border-radius: 7px;
+    padding: .9rem;
+    box-shadow: 1px 2px 15px lightgray;
+}
+
+.heading-1-nav {
+    display: flex;
+    align-items: center;
+}
+
+.heading-1-nav p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.img-30 {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.gri {
+    display: grid;
+    /* align-items: center; */
+    margin-left: .6rem;
+}
+
+.flepx {
+    display: flex;
+    align-items: center;
+}
+
+.account-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #050505;
+}
+
+.black-arr {
+    margin-top: .5rem;
+}
+
+.porfi-des {
+    font-weight: 600;
+}
+
+.when {
+    margin-top: -.45rem;
+}
+
+.more-svg {
+    margin-left: 4.5rem;
+    background-color: transparent;
+    padding: .3rem;
+    border-radius: 100%;
+}
+
+.more-svg:hover {
+    cursor: pointer;
+    background-color: rgb(225, 224, 224);
+}
+
+.boll {
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.grid-3 {
+    margin-left: -1.5rem;
+}
+
+.sponsor {
+    color: #65676B;
+}
+
+.build-test {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    padding: .42rem;
+}
+
+.build-test:hover {
+    background-color: #ced6df;
+    border-radius: 8px;
+}
+
+.img-32 {
+    width: 6rem;
+    height: 4rem;
+    border-radius: 9px;
+    margin-right: .5rem;
+}
+
+.power {
+    font-size: .85rem;
+    font-weight: 700;
+    color: #65676B;
+}
+
+.img-33 {
+    width: 99px;
+    height: 99px;
+    border-radius: 9px;
+    margin-right: .5rem;
+}
+
+.nafii {
+    color: #65676B;
+    font-size: .8rem;
+}
+
+.imm {
+    display: grid;
+}
+
+.line-hei {
+    width: 100%;
+    height: 1px;
+    background-color: #d2d2d2;
+    margin-top: .87rem;
+}
+
+.mid-c {
+    margin-top: 1rem;
+}
+
+.bt-ss {
+    margin-top: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: .4rem;
+}
+
+.bt-ss:hover {
+    background-color: #ced6df;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sen {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #101010;
+}
+
+.grao {
+    margin-left: .4rem;
+}
+
+.last-cont {
+    margin-top: 1rem;
+}
+
+.cont-nav {
+    display: flex;
+    align-items: center;
 }

@@ -193,9 +193,10 @@ body {
 }
 
 .story:hover {
-    filter: brightness(50%);
+    filter: sepia(50%) brightness(70%);
     cursor: pointer;
-    transition: .5s ease-in-out;
+    transition: .5s ease;
+    transform: scale(1.017);
 }
 
 .story-1 {
@@ -327,7 +328,6 @@ body {
 
 .flet {
     display: flex;
-    /* align-items: center; */
 }
 
 .chai {
@@ -402,7 +402,7 @@ body {
 
 .gri {
     display: grid;
-    /* align-items: center; */
+    align-items: center;
     margin-left: .6rem;
 }
 
@@ -540,4 +540,56 @@ body {
 .cont-nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.vide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .25rem;
+    background-color: transparent;
+    padding: .5rem;
+}
+
+.vide:hover {
+    background-color: #ced6df;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.just {
+    display: flex;
+    align-items: center;
+}
+
+.cont-list {
+    display: flex;
+    align-items: center;
+    /* margin-top: 1rem; */
+    background-color: transparent;
+    border-radius: 6px;
+    padding: .5rem;
+}
+
+.cont-list:hover {
+    background-color: #d5d5e3;
+    cursor: pointer;
+}
+
+.cont-list img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.cont-list p {
+    font-size: 1rem;
+    color: #464647;
+    font-weight: 600;
+    margin-left: .8rem;
+}
+
+.clip {
+    margin-top: .5rem;
 }
